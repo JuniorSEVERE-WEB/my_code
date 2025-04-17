@@ -1,0 +1,51 @@
+#footer
+{
+  float: left;
+  width: 100%;
+  height: 300px;
+  background-color: black;
+  margin-top: 300px; 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: white;
+  column-gap: 50px;
+  padding: 50px 5%;
+}
+#footer p
+{
+  color: white;
+}
+#footer a 
+{
+  color: white;
+  float: left;
+  width: 100%;
+  text-decoration: none;
+  margin: 5px 0;
+}
+#footer h2
+{
+  color: white;
+  
+}
+ion-icon
+{
+  margin-bottom: -3px;
+}
+#footer ul
+{
+  float: left;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#footer li
+{
+  float: left;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0 2px;
+  border-radius: 10px;
+
+}

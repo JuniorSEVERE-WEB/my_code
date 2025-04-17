@@ -1,0 +1,33 @@
+#contact-form
+{
+  float: left;
+  width: 50%;
+  margin-left: 25%;
+
+}
+input
+{
+  width: 100%;
+  margin-top: 5px;
+  border: 1px solid gray;
+  padding: 15px 15px;
+  border-radius: 15px;
+}
+
+textarea
+{
+  width: 100%;
+  height: 100px;
+  margin-top: 5px;
+  border-radius: 15px;
+  padding: 15px;
+}
+button
+{
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: rgb(5,157,214);
+  border: none;
+  border-radius: 10px;
+}

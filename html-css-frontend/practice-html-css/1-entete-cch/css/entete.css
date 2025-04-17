@@ -1,0 +1,37 @@
+#entete
+{
+  height: 60px;
+  float: left;
+  box-shadow: 0 1px 3px rgb(5,157,214);
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: white;
+}
+#logo
+{
+  height: 60px;
+}
+#menu
+{
+  float: right;
+  line-height: 60px;
+}
+#menu a
+{
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  color: rgb(5,157,214);
+}
+#lien-inscription
+{
+  background-color: rgb(66, 66, 109);
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+}
+#lien-inscription:hover
+{
+  background-color: black;
+}

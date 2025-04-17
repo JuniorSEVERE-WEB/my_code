@@ -1,0 +1,349 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+}
+body
+{
+  background-color: #FFFFFF;
+}
+/*-----First---------------First-section------------- */
+
+.google-profil
+{
+  
+  height: 65px;
+  margin:0 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.google-profil .picture-logo
+{
+  height: 25px;
+  width: 75px;
+}
+.left-google
+{
+  display: flex;
+  gap:20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-google button
+{
+  padding: 2px;
+  border: 1px solid rgb(226, 225, 225);
+}
+.left-google button a
+{
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  background-color: rgb(230, 228, 228);
+}
+.left-google a ion-icon
+{
+  font-size: 20px;
+  color: gray;
+  font-weight: bold;
+}
+.left-google p
+{
+  font-size: 21px;
+  font-weight: bold;
+  background-color: #004D40;
+  color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advanced
+{
+  
+  margin-top: 23px;
+  margin-left: 45px;
+  margin-right: 10px;
+  color: #D93033;
+  font-size: 21.2px;
+
+}
+.line-entiere
+{
+  margin-top: 24px;
+  border-bottom: 1px solid rgb(235, 235, 235);
+}
+.div-content
+{
+ 
+  margin-left: 45px;
+  margin-right: 10px;
+}
+
+/*---Second---------------Second-section---------- */
+form
+{
+  margin-left: 45px;
+  margin-right: 10px;
+  margin-top: 45px;
+}
+.find-todo
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.find
+{
+  
+  flex-shrink: 0;
+  display: flex;
+  color: #333333;
+  font-size: 18px;
+  width: 150px;
+}
+.todo 
+{
+  width: 460px;
+  color: #444444;
+  margin-right: 8px;
+}
+.first-flexbox
+{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+  align-items: center;
+}
+.first-flexbox .one 
+{
+
+  font-size: 14px;
+  display: flex;
+  width: 150px;
+  flex-shrink: 0;
+}
+.first-flexbox a .one span
+{
+  color: rgb(66, 66, 170);
+}
+a{
+  text-decoration: none;
+}
+a:hover
+{
+  text-decoration: underline;
+}
+
+.first-flexbox .two
+{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 573px;
+  flex:1;
+  flex-shrink: 1;
+  flex-basis: 1;
+  height: 30px;
+}
+.first-flexbox .two input,
+.first-flexbox .two select
+{
+  display: flex;
+
+  flex: 1;
+  width: 230px;
+  flex-shrink: 1;
+  outline: none;
+  border: 1px solid rgb(185, 185, 185);
+  height: 30px;
+
+}
+.first-flexbox .two input:focus,
+.first-flexbox .two select:focus
+{
+  border: 1.3px solid rgb(92, 92, 221);
+}
+.first-flexbox .two select
+{
+  background-color: rgb(246,246,246);
+}
+.first-flexbox .two input:focus
+.first-flexbox .two select:focus
+{
+  border: 1.3px solid rgb(92, 92, 221);
+}
+.first-flexbox input[type="radio"]
+{
+  max-width: 15px;
+  height: 15px;
+  border-radius: 7.5px;
+  appearance: none;
+  margin-left: 10px;
+  border: 1px solid rgb(212, 211, 211);
+}
+
+.first-flexbox input[type="radio"]:checked
+{
+  background-color: rgb(0, 0, 0);
+}
+.first-flexbox .three
+{
+
+  display: flex;
+  margin-right: 55px;
+  flex-shrink: 0;
+  width: 400px;
+  font-size: 12px;
+  color: rgb(88, 88, 88);
+}
+.line-two
+{
+  margin-right: 7%;
+  margin-top: 30px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+.narrow
+{
+  font-size: 17px;
+  margin-top: 15px;
+  width: 190px;
+  flex-wrap: wrap;
+  display: flex;
+  margin-bottom: -8px;
+}
+.redo
+{
+  height: 15px;
+  width: 15px;
+  background-color: red;
+}
+.first-flexbox .two button
+{
+  background-color: #4888F0;
+  padding: 4px;
+  border: none;
+  color: white;
+  margin-top: 10px;
+  
+}
+.last-line
+{
+  margin-top: 25px;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+#youCan
+{
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr 1fr;
+  margin-bottom: 70px;
+}
+#youCan .para-blueo a
+{
+  color: #5A00EE !important;
+  font-size: 13px;
+
+}
+.usage-rights
+{
+  color: #5A00EE;
+}
+#youCan:hover .para-blueo
+{
+  text-decoration: underline;
+}
+#youCan h3
+{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: rgb(37, 37, 37);
+}
+.hhpt
+{
+  float: left;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #F2F2F2;
+  padding: 10px 15%;
+}
+.haiti
+{
+  background-color: #F2F2F2;
+}
+.hpr
+{
+  display: flex;
+  gap:25px;
+  margin-top: 15px;
+  background-color: #F2F2F2;
+}
+.help
+{
+  background-color: #F2F2F2;
+  color: gray;
+}
+
+@media(max-width:1276px)
+{
+  .todo,
+  .first-flexbox .three
+  {
+    margin-left: 1%;
+  }
+  .first-flexbox .two
+  {
+    margin-left:1%;
+  }
+}
+
+@media (max-width: 1070px) {
+  .todo
+  {
+    display: none;
+  }
+  .first-flexbox .three
+  {
+    display: none;
+  }
+  .first-flexbox .two
+  {
+    flex-grow: 1;
+    display: flex;
+    margin-right: 15%;
+    margin-left: 3%;
+  }
+  .line-two
+{
+  margin-right: 0%;
+}
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+
+}
+@media (max-width: 500px) {
+
+
+  .first-flexbox input[type="radio"] {
+    max-width: 25px; /* Encore plus grand sur les petits écrans */
+    height: 25px;
+    border-radius: 12.5px;
+    margin-left: 15px; /* Espacement supplémentaire */
+}
+
+
+}

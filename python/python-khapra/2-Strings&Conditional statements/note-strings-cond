@@ -1,0 +1,13 @@
+string is data type type that stores a sequence of characteres
+
+basic operations
+
+.concatenation
+
+"hello" + "world" ------> "helloworld"
+
+.length of string
+
+len(str)
+
+\n = paragraph

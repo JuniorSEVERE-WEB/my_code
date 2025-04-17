@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../../Desktop/CS50-web"
+		},
+		{
+			"path": "../../../../../Desktop/JuniorSEVERE-WEB-web50-projects-2020-x-search"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "coding-all"
+	}
+}

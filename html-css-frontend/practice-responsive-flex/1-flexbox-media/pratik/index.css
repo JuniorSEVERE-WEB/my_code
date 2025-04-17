@@ -1,0 +1,51 @@
+.main
+{
+  height: 100vh;
+}
+form
+{
+  height: 90vh;
+}
+.form-box
+{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+button
+{
+  width: 100vw;
+}
+/*
+.form-box label,
+.form-box input,
+.form-box select
+.form-box button
+.form-box select option
+{
+
+} */
+@media (min-width: 600px)
+{
+  .form-box
+{
+  flex-direction: row;
+}
+.form-box label
+{
+  width: 9rem;
+}
+.form-box input,
+.form-box select
+.form-box button 
+{
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+button
+{
+  margin-left: 9rem;
+  width: 10%;
+}
+}

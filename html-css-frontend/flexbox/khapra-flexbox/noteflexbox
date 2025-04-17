@@ -1,0 +1,78 @@
+ /*1- display: flex , tju komanse l nan start-flex */
+
+  /* 2-inline-block pran an kont width
+  inline pa pran an kont width e height 
+  
+ 3- flex-direction: row(default);
+  flex-direction:column;
+    flex-direction: row-reverse;
+  flex-direction:column-reverse;
+
+  4-mainaxis = row = left-to-right
+  5-mainaxis = row = row-reverse
+  6-crossaxis = top-to-bottom(vice-versa)
+
+  6-justify-content: alignment along the main axis
+  7-align-items: alignment along the cross axis
+  8-align-content: alignment 0f space between & around 
+                   the content along cross-axis
+
+  7-flex-wrap: nowrap/wrap/wrap-reverse
+
+  8-flex-warp: wrap; si l pa ka finn pran yon 
+             elemean nan menm liy la, lap desann pa anba
+             e se nan mitan div anglobant lan res bgy lan ap tombe
+
+
+  9-aligns-content: Elle fonctionne uniquement si le conteneur
+           a un flex-wrap: wrap; et que les éléments
+            s'étendent sur plusieurs lignes.
+  
+  9.1-align-items agit sur chaque élément individuellement 
+  le long de l'axe transversal.
+    align-content : agit sur l'ensemble des lignes de contenu 
+    le long de l'axe transversal, mais seulement 
+    si tu as plusieurs lignes (c'est-à-dire si flex-wrap: 
+    wrap; est activé).
+
+  10-align-self: alignment of individual along the cross axis
+       (experyans pam: li fe eleman tombe ou monte kote 
+        ou te we li a depan de si w ba li flex-end, center,start)
+
+    10.1-Elle remplace la valeur définie par align-items 
+         pour cet élément spécifique.    
+         align-self: se pou yon eleman
+         align-items: se pou yon gwoup(div)
+
+     align-self:
+       baseline : Aligne l'élément sur la ligne de base 
+                  du texte.
+
+      stretch (par défaut) : Étire l'élément pour remplir 
+                 l'espace disponible le long de l'axe transversal.
+  
+  11-flex-grow: how uch a flex item will grow relative
+      to the flex items if space is available
+
+      
+
+  12-flex-shrink: how much a flex item will shrink relative
+          to the rest of the space is available   
+          
+     eksperyans: le m bay yon div individyel flex-shrink p
+        gran vale se le sa li vinn piti, si m ba l 0. li pa retreci  
+        
+        align-self : Contrôle l'alignement d'un élément individuel le long de l'axe transversal.
+
+        Liens :
+
+
+
+
+        align-self est indépendant de flex-grow et flex-shrink,
+         mais les changements de taille peuvent influencer l'alignement.
+
+        flex-grow et flex-shrink travaillent ensemble pour gérer la 
+        flexibilité des éléments le long de l'axe principal.
+  
+  */
