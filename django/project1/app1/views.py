@@ -2,6 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseNotFound
 # Create your views here.
 
+def months_by_number(request, month):
+    return HttpResponse(month)
+
 
 def months(request, month):
     if month.lower() == "january":
