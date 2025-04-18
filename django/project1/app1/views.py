@@ -3,10 +3,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    return HttpResponse("we are in january")
+    return HttpResponse("Hello world!")
 
-def february(request):
-    return HttpResponse("We are in february")
-
-def march(request):
-    return HttpResponse("We are in march")
+def months(request, month):
+    return HttpResponse(f"we are in {month}")
