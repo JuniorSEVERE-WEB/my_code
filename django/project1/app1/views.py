@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseNotFound
+from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
 
 months_dict = {
     "january": "we eat rice",
@@ -18,7 +18,9 @@ months_dict = {
 # Create your views here.
 
 def months_by_number(request, month):
-    return HttpResponse(month)
+    the_months = list(months_dict.keys())
+    redirect_month = the_months[month]
+    return HttpResponseRedirect("/app1/" + redirect_month)
 
 
 def months(request, month):
