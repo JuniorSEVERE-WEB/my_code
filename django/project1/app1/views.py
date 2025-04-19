@@ -32,5 +32,9 @@ def months_by_string(request, month):
     except  :
         return HttpResponseNotFound("This month is not supported, okok!")    
    
-             
+"""
+months_by_number : Gère la conversion nombre → nom
+
+months_by_string : Gère l'affichage final
+"""             
         
