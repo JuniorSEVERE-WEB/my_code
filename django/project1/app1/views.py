@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
-
+from django.urls import reverse
 months_dict = {
     "january": "we eat rice",
     "february": "We eat beans",
@@ -24,7 +24,8 @@ def months_by_number(request, month):
         return HttpResponseNotFound("Invalid month")
     
     redirect_month = the_months[month - 1]
-    return HttpResponseRedirect("/app1/" + redirect_month)
+    redirect_path = reverse("month-app1", args=[redirect_month]) #challenge/january
+    return HttpResponseRedirect(redirect_path)
 
 
 def months_by_string(request, month):
