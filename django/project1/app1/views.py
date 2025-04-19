@@ -23,7 +23,7 @@ def months_by_number(request, month):
     return HttpResponseRedirect("/app1/" + redirect_month)
 
 
-def months(request, month):
+def months_by_string(request, month):
     try:
         
         message_month = months_dict[month.lower()]
