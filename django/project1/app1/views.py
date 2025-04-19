@@ -19,6 +19,10 @@ months_dict = {
 
 def months_by_number(request, month):
     the_months = list(months_dict.keys())
+    
+    if month > len(the_months):
+        return HttpResponseNotFound("Invalid month")
+    
     redirect_month = the_months[month - 1]
     return HttpResponseRedirect("/app1/" + redirect_month)
 
@@ -29,12 +33,12 @@ def months_by_string(request, month):
         message_month = months_dict[month.lower()]
         return HttpResponse(message_month)
           
-    except  :
+    except:
         return HttpResponseNotFound("This month is not supported, okok!")    
    
 """
 months_by_number : Gère la conversion nombre → nom
 
-months_by_string : Gère l'affichage final
+months_by_string : Gère l'affichage final  
 """             
         
