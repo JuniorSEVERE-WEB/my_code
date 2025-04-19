@@ -29,7 +29,7 @@ def months_by_string(request, month):
         message_month = months_dict[month.lower()]
         return HttpResponse(message_month)
           
-    except:
+    except  :
         return HttpResponseNotFound("This month is not supported, okok!")    
    
              
