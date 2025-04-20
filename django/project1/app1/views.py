@@ -17,7 +17,17 @@ months_dict = {
 }
 # Create your views here.
 
-
+def index(request):
+    list_items = ""
+    the_months = list(months_dict.keys())
+    
+    for month in the_months:
+        capitalized_month = month.capitalize()
+        month_path = reverse("month-app1", args=[month])
+        list_items += f"<li><a href=\"{month_path}\">{capitalized_month}</a></li>"
+        
+    response_data = f"<ul>{list_items}</ul>"
+    return HttpResponse(response_data)
 
 def months_by_number(request, month):
     the_months = list(months_dict.keys())
