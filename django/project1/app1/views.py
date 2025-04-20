@@ -17,6 +17,8 @@ months_dict = {
 }
 # Create your views here.
 
+
+
 def months_by_number(request, month):
     the_months = list(months_dict.keys())
     
@@ -32,10 +34,11 @@ def months_by_string(request, month):
     try:
         
         message_month = months_dict[month.lower()]
-        return HttpResponse(message_month)
+        response_data = f"<h1>{message_month}</h1>"
+        return HttpResponse(response_data)
           
     except:
-        return HttpResponseNotFound("This month is not supported, okok!")    
+        return HttpResponseNotFound("<h1>This month is not supported, okok!</h1>")    
    
 """
 months_by_number : Gère la conversion nombre → nom

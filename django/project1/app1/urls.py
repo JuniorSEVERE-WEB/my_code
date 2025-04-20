@@ -6,4 +6,6 @@ urlpatterns = [
     
     path("<str:month>/", views.months_by_string, name ="month-app1")
     
+
+    
 ]
