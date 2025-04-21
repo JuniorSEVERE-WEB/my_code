@@ -45,7 +45,9 @@ def months_by_string(request, month):
     try:
         print("Mois reçu :", month)  # Debug : vérifiez la valeur dans la console
         message_month = months_dict[month.lower()]  # Si le mois est valide
-        return render(request, "app1/app.html", {"text": message_month})
+        return render(request, "app1/app.html", {
+            "text": message_month,
+            "month_name": month.capitalize()})
     except KeyError:
         return HttpResponseNotFound("<h1>Ce mois n'est pas valide !</h1>")
     except Exception as e:
