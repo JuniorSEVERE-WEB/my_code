@@ -43,15 +43,14 @@ def months_by_number(request, month):
 
 def months_by_string(request, month):
     try:
-        
-        message_month = months_dict[month.lower()]
-        #response_data = f"<h1>{message_month}</h1>"
-        #response_data = render_to_string("app1/app1.html")
-        return render(request,"app1/app1.html")
-        #return HttpResponse(response_data)
-          
-    except:
-        return HttpResponseNotFound("<h1>This month is not supported, okok!</h1>")    
+        print("Mois reçu :", month)  # Debug : vérifiez la valeur dans la console
+        message_month = months_dict[month.lower()]  # Si le mois est valide
+        return render(request, "app1/app.html", {"text": message_month})
+    except KeyError:
+        return HttpResponseNotFound("<h1>Ce mois n'est pas valide !</h1>")
+    except Exception as e:
+        print("Erreur de template :", e)  # Debug : vérifiez si le template est manquant
+        return HttpResponseNotFound("<h1>Erreur de chargement du template</h1>")  
    
 """
 months_by_number : Gère la conversion nombre → nom
