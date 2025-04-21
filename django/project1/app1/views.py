@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
 from django.urls import reverse
+
 months_dict = {
     "january": "we eat rice",
     "february": "We eat beans",
@@ -44,8 +45,10 @@ def months_by_string(request, month):
     try:
         
         message_month = months_dict[month.lower()]
-        response_data = f"<h1>{message_month}</h1>"
-        return HttpResponse(response_data)
+        #response_data = f"<h1>{message_month}</h1>"
+        #response_data = render_to_string("app1/app1.html")
+        return render(request,"app1/app1.html")
+        #return HttpResponse(response_data)
           
     except:
         return HttpResponseNotFound("<h1>This month is not supported, okok!</h1>")    
