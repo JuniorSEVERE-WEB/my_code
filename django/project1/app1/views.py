@@ -20,7 +20,7 @@ months_dict = {
 
 def index(request):
     list_items = ""
-    the_months = list(months_dict.keys())
+    the_months = list(months_dict.keys())#
     
     for month in the_months:
         capitalized_month = month.capitalize()
