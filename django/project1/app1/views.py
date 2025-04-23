@@ -14,7 +14,7 @@ months_dict = {
     "september": "we are in september",
     "october": " we are in october",
     "november": "we are in november",
-    "december": "we are in december"
+    "december": None
 }
 # Create your views here.
 
