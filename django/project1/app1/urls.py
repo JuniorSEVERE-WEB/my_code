@@ -6,6 +6,6 @@ urlpatterns = [
     
     path("<str:month>/", views.months_by_string, name ="month-app1"),
     
-    path("", views.index) # /app1/
+    path("", views.index, name="index") # /app1/
     
 ]

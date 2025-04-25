@@ -5,6 +5,7 @@
     {% endblock %}   
  
     {% block content %}
+    {% include "app1/includes/header.html" %}
         <ul>
             {% for month in months %}
             <li><a href="{% url "month-app1" month %}">{{ month|title }}</a></li>

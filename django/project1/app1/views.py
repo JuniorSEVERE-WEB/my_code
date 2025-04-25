@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
+from django.http import Http404, HttpResponseNotFound, HttpResponseRedirect
 from django.urls import reverse
+from django.template.loader import render_to_string
 
 months_dict = {
     "january": "we eat rice",
@@ -42,12 +43,8 @@ def months_by_string(request, month):
         return render(request, "app1/app.html", {
             "text": message_month,
             "month_name": month})
-    except KeyError:
-        return HttpResponseNotFound("<h1>Ce mois n'est pas valide !</h1>")
-    except Exception as e:
-        print("Erreur de template :", e)  # Debug : vérifiez si le template est manquant
-        return HttpResponseNotFound("<h1>Erreur de chargement du template</h1>")  
-   
+    except:
+        raise Http404()
 """
 months_by_number : Gère la conversion nombre → nom
 
