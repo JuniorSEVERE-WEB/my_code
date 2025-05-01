@@ -35,7 +35,7 @@ def months_by_number(request, month):
     redirect_path = reverse("month-app1", args=[redirect_month]) #challenge/january
     return HttpResponseRedirect(redirect_path)
 
-
+#####
 def months_by_string(request, month):
     try:
         print("Mois reçu :", month)  # Debug : vérifiez la valeur dans la console
